@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Concurso</title>
+</head>
+
+<body>
+  <header>
+    <h1>Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
+  </header>
+
+  <main>
+    <form id="formulario">
+
+      <div class="coluna" id="nomeEmail">
+        <label for="user">
+          Nome:
+          <input type="text" id="user" name="nome" placeholder="Entre 10 á 40 caracteres.">
+        </label>
+        <label for="email">
+          Email:
+          <input type="email" name="email" id="email" placeholder="Limite 10 a 50 caracteres.">
+        </label>
+
+      </div>
+
+      <div>
+        <label for="opcao">
+          <input type="radio" name="opcao" id="cidade" value="cidade"> Cidade
+          <input type="radio" name="opcao" id="campo"> Campo 
+          <input type="radio" name="opcao" id="praia"> Praia 
+          <input type="radio" name="opcao" id="montanhas"> Montanhas
+        </label>
+      </div>
+
+      <div class="coluna">
+        <label for="resposta">
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+        </label>
+        <textarea name="resposta" id="resposta" cols="30" rows="10"> </textarea>
+      </div>
+
+      <div class="coluna">
+        <label for="data">
+          Qual a melhor data para realizar sua viagem?
+          <input type="date" name="data" id="data">
+        </label>
+      </div>
+
+      <div class="coluna">
+        <label for="concordo1">
+          Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          <input type="checkbox" name="concordo1" id="concordo1">
+        </label>
+        <label for="concordo2">
+          Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <input type="checkbox" name="concordo2" id="concordo2">
+        </label>
+      </div>
+
+    </form>
+
+    <div>
+      <label for="">
+        <button type="submit" id="botao">Enviar</button>
+        <button type="reset">Apagar</button>
+      </label>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
